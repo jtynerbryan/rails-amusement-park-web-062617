@@ -1,0 +1,16 @@
+<h1>Welcome <%= @user.name%></h1>
+
+<ul>
+	<li>Mood: <%=@user.mood %></li>
+	<li>Tickets: <%=@user.tickets %></li>
+	<li>Height: <%=@user.height %></li>
+</ul>
+
+<% if @user.admin %>
+<h3>ADMIN</h3>
+<% end %>
+
+<%= link_to "See attractions", '/attractions' %>
+
+
+<%= link_to "Log Out", '/logout', :method => :delete%>
