@@ -1,0 +1,21 @@
+<h1>Add New Attraction</h1>
+
+<%= form_for @attraction  do |f|%>
+<label>Name</label><br>
+<%= f.text_field :name %><br>
+
+<label>Height</label><br>
+<%= f.text_field :min_height %><br>
+
+<label>How happy are you? 1-5</label><br>
+<%= f.text_field :happiness_rating %><br>
+
+<label>How nauseous are you? 1-5</label><br>
+<%= f.text_field :nausea_rating %><br>
+
+<label>How many tickets do you have</label><br>
+<%= f.text_field :tickets %><br>
+
+<%= f.submit %>
+
+<% end %>
